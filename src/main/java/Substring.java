@@ -1,8 +1,13 @@
+import exception.InvalidInputInLongestCommonSubstrException;
 
 public class Substring {
 
 
     public static String longestCommonSubstr(String S1, String S2) {
+
+        if (S1==null || S2 == null){
+            throw new InvalidInputInLongestCommonSubstrException();
+        }
 
         int Start = 0;
         int Max = 0;
