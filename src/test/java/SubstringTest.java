@@ -31,7 +31,7 @@ public class SubstringTest {
 
     @Test
     public void givenTwoStringsWithNoCommonChars_whenLongestCommonSubstr_returnMessage(){
-        assertEquals("no common chars",Substring.longestCommonSubstr("Hello world","dlrow olleH"));
+        assertEquals("no common chars",Substring.longestCommonSubstr("asdfghjk","qwertyui"));
     }
 
 }

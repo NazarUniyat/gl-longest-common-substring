@@ -31,8 +31,9 @@ public class Substring {
         if (substring.length()==1){
             return "only one common char - " + substring;
         }
-
-
+        if (substring.length()==0){
+            return "no common chars";
+        }
         return substring ;
     }
 
