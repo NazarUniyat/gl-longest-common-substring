@@ -9,8 +9,8 @@ public class SubstringTest {
 
     @Test
     public void givenTwoStringsWithCommonSubstr_whenLongestCommonSubstr_returnLongestSubstr() {
-        String substr = Substring.longestCommonSubstr("Hello world my name is Nazar", "Hello world i love you");
-        assertEquals("Hello world ", substr);
+        String substr = Substring.longestCommonSubstr("Some text. Hello world, my name is Nazar", "Hello world, this is my 1st test case");
+        assertEquals("Hello world, ", substr);
     }
 
 
@@ -25,7 +25,7 @@ public class SubstringTest {
     }
 
     @Test
-    public void givenTwoStringsWithCommonOnlyOneCommonChar_whenLongestCommonSubstr_returnMessage(){
+    public void givenTwoStringsWithOnlyOneCommonChar_whenLongestCommonSubstr_returnMessage(){
         assertEquals("only one common char - b",Substring.longestCommonSubstr("bcdtyu","zxbnmal"));
     }
 
