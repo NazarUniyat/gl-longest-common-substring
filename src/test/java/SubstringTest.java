@@ -26,7 +26,12 @@ public class SubstringTest {
 
     @Test
     public void givenTwoStringsWithCommonOnlyOneCommonChar_whenLongestCommonSubstr_returnMessage(){
-        assertEquals("only one common char - a",Substring.longestCommonSubstr("abcdtyu","zxbnmal"));
+        assertEquals("only one common char - b",Substring.longestCommonSubstr("bcdtyu","zxbnmal"));
+    }
+
+    @Test
+    public void givenTwoStringsWithNoCommonChars_whenLongestCommonSubstr_returnMessage(){
+        assertEquals("no common chars",Substring.longestCommonSubstr("Hello world","dlrow olleH"));
     }
 
 }
