@@ -24,5 +24,9 @@ public class SubstringTest {
                 .hasMessageContaining("invalid input in LongestCommonSubstr method");
     }
 
+    @Test
+    public void givenTwoStringsWithCommonOnlyOneCommonChar_whenLongestCommonSubstr_returnMessage(){
+        assertEquals("only one common char - a",Substring.longestCommonSubstr("abcdtyu","zxbnmal"));
+    }
 
 }
