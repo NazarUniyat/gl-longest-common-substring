@@ -27,7 +27,13 @@ public class Substring {
 
         }
 
-        return S1.substring(Start,(Start+Max));
+        String substring = S1.substring(Start, (Start + Max));
+        if (substring.length()==1){
+            return "only one common char - " + substring;
+        }
+
+
+        return substring ;
     }
 
 }
