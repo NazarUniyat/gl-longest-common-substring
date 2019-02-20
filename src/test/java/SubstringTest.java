@@ -1,7 +1,5 @@
-import org.junit.Assert;
+import exception.InvalidInputInLongestCommonSubstrException;
 import org.junit.Test;
-
-import java.security.PublicKey;
 
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.assertj.core.api.Assertions.catchThrowable;
@@ -23,7 +21,7 @@ public class SubstringTest {
         assertThat(thrown)
                 .isNotNull()
                 .isInstanceOf(InvalidInputInLongestCommonSubstrException.class)
-                .hasMessageContaining("there is invalid input in LongestCommonSubstr method");
+                .hasMessageContaining("invalid input in LongestCommonSubstr method");
     }
 
 
